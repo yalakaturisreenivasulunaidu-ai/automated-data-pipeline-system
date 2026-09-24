@@ -1,0 +1,9 @@
+order_id,customer,amount,region,order_date
+1001,Alice Kumar,250.50,North,2026-09-01
+1002,Brian Lee,,South,2026-09-02
+1003,Carla Gomez,89.99,East,2026-09-02
+1004,Brian Lee,150.00,South,2026-09-03
+1005,,45.00,West,2026-09-04
+1006,Deepak Rao,300.25,North,2026-09-05
+1006,Deepak Rao,300.25,North,2026-09-05
+1007,Elena Petrova,120.10,East,2026-09-06

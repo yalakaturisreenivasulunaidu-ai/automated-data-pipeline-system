@@ -1,0 +1,20 @@
+pipeline:
+  name: "sales_pipeline"
+
+extract:
+  input_dir: "data/raw"
+  file_pattern: "*.csv"
+
+transform:
+  drop_duplicates: true
+  dropna_columns: ["order_id", "amount"]
+  derived_columns:
+    total_with_tax: "amount * 1.08"
+
+load:
+  sqlite_path: "data/pipeline.db"
+  table_name: "sales"
+  output_csv: "data/processed/sales_clean.csv"
+
+schedule:
+  interval_minutes: 60
